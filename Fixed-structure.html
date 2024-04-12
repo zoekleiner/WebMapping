@@ -42,8 +42,8 @@
             // 2.2 Then initialize the first map
         var map = new mapboxgl.Map({
        container: 'map1', // id of a div on your page, where the map will be inserted
-       style: 'mapbox://styles/mapbox/streets-v11', // the style URL 'mapbox://styles/mapbox/streets-v11' 
-       center: [-122.6788, 45.5212], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+       style: 'mapbox://styles/mapbox/outdoors-v12', // the style URL 'mapbox://styles/mapbox/streets-v11' 
+       center: [-122.5944, 45.5883], // starting position [lng, lat] eg. [-122.6788, 45.5212]
        zoom: 11 // starting zoom 
    });
 
@@ -52,7 +52,7 @@
                       .setText('Welcome to Portland, a city with many beautiful gardens!');
 
                   var marker = new mapboxgl.Marker({color:'#FFD1DC'})
-                    .setLngLat([-122.6788, 45.5212]) // starting position [lng, lat]
+                    .setLngLat([-122.5944, 45.5883]) // starting position [lng, lat]
                     .setPopup(popup) //add the popup named "popup" to this marker 
 		    .addTo(map); // add it to the map with the ID "map"
 
@@ -72,14 +72,14 @@
             // Then initialize the 2nd map
             var map2 = new mapboxgl.Map({
                 container: 'map2', // id of a div on your page, where the map will be inserted
-                style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                style: 'mapbox://styles/mapbox/outdoors-v12', // stylesheet location
                 center: [-122.7080, 45.5189], // starting position [lng, lat] eg. [-122.6788, 45.5212]
                 zoom: 11 // starting zoom 
                 });
 
             // 2.5.4 Add any other variables (such as markers) to the second map
             var popup2 = new mapboxgl.Popup()
-            .setText('Portland Japanese Gardens');
+            .setText('The Portland Japanese Gardens: A 30 minute drive from the airport!');
 
             var marker2 = new mapboxgl.Marker({color:'#FFD1DC'})
            .setLngLat([-122.7080, 45.5189]) // starting position [lng, lat] 
@@ -105,12 +105,12 @@
             
               var map3 = new mapboxgl.Map({
                 container: 'map3', // id of a div on your page, where the map will be inserted
-                style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                style: 'mapbox://styles/mapbox/outdoors-v12', // stylesheet location
                 center: [-122.7053, 45.5190], // starting position [lng, lat] eg. [-122.6788, 45.5212]
                 zoom: 11 // starting zoom 
                 });
              var popup3 = new mapboxgl.Popup()
-            .setText('International Rose Test Garden');
+            .setText('The International Rose Test Garden: A 35 minute drive from the airport!');
 
             var marker3 = new mapboxgl.Marker({color:'#FFD1DC'})
            .setLngLat([-122.7053, 45.5190]) // starting position [lng, lat] 
