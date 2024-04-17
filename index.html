@@ -5,9 +5,10 @@
 	     <title>Owners vs Renters Map</title>
 	     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-			scalable=no' />
 	     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/			bootstrap.min.css" rel="stylesheet" integrity="sha384-			BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 			crossorigin="anonymous">
-	     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-		gl.js'></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-		gl.js'>
+</script>
 	     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' 		rel='stylesheet' />
-	  <style>
+	 	<style>
 	        body { margin:0; padding:0; }
 	         #map { position:absolute; top:0; bottom:0; width:100%; }
 		/*  stlye for paragraph tags */
@@ -88,53 +89,50 @@
        </style>
  </head>
  <body>
-
-   <div id='map'></div>
-	<!-- map description panel: this is a box in the bottom right corner that 	explains to the viewer what the map is that they are looking at -->
-	</div>
-	<div class="descriptionPanel" id="descriptionPanel" style="height: 250px;">
-   	 <span onClick="panelSelect()" id="glyph" class="chevron glyphicon glyphicon-chevron-down"></span>
-     <hr/>
-     <h4>WHAT AM I LOOKING AT?</h4>
-     <p style="margin-left: 10px; margin-right: 10px;">
-       This is a map showing every single person in the Portland Area as a dot. Data 	is taken from the 2017 US Census, and is accurate at the level of a block; 	however, within each block location is randomized. Points are colored based on 	the number of home owners versus renters on a block.
-     </p>
-   </div>
-	<!-- this is the legend for the map-->
-	<div class="LegendContainer">
-     <div class="legendItem">
-         <span class="owner">&#11044;</span>
-         <span class="layerDescription">Owners</span>
-     </div>
-     <div class="legendItem">
-         <span class="renter">&#11044;</span>
-         <span class="layerDescription">Renters</span>
-
-   </div>
+		   <div id='map'></div>
+			<!-- map description panel: this is a box in the bottom right corner 			that explains to the viewer what the map is that they are looking at -->
+			</div>
+			<div class="descriptionPanel" id="descriptionPanel" style="height: 			250px;">
+		   	<span onClick="panelSelect()" id="glyph" class="chevron glyphicon 			glyphicon-chevron-down"></span>
+		     <hr/>
+		     <h4>WHAT AM I LOOKING AT?</h4>
+		     <p style="margin-left: 10px; margin-right: 10px;">
+		       This is a map showing every single person in the Portland Area as a 			dot. Data is taken from the 2017 US Census, and is accurate at the level 			of a block; 	however, within each block location is randomized. Points 			are 	colored based on the number of home owners versus renters on a 			block.
+		     </p>
+			 </div>
+				<!-- this is the legend for the map-->
+				<div class="LegendContainer">
+			    <div class="legendItem">
+			         <span class="owner">&#11044;</span>
+			         <span class="layerDescription">Owners</span>
+			     </div>
+			     <div class="legendItem">
+			         <span class="renter">&#11044;</span>
+			         <span class="layerDescription">Renters</span>
+			
+			  	</div>
    <script>
 
-	     mapboxgl.accessToken = 	'pk.eyJ1Ijoiem9la2xlaW5lciIsImEiOiJjbHVsaGxtZDIxMmZ6MnBudXkxaWU0dW9qIn0.evoQWx2EE6vs2yGaEqg23g'; 
-	     var map = new mapboxgl.Map({
-	         container: 'map', // container id
-	         style: 'mapbox://styles/zoekleiner/clv2pzabz00d501q17wrn3f29' // stylesheet	location	
-	     });
-		 // Add zoom and rotation controls to the map.
-		 map.addControl(new mapboxgl.NavigationControl());
-		
-		var state = { panelOpen: true };
-      function panelSelect(e){
-        if(state.panelOpen){
-          document.getElementById('descriptionPanel').style.height = '26px';
-          document.getElementById('glyph').className = "glyphicon glyphicon-chevron-up";
-          state.panelOpen = false;
-        } else {
-          document.getElementById('descriptionPanel').style.height = '250px';
-          document.getElementById('glyph').className = "glyphicon glyphicon-chevron-down";
-          state.panelOpen = true;
-        }
-      }
+		     mapboxgl.accessToken = 			'pk.eyJ1Ijoiem9la2xlaW5lciIsImEiOiJjbHVsaGxtZDIxMmZ6MnBudXkxaWU0dW9qIn0.			evoQ		Wx2EE6vs2yGaEqg23g'; 
+		     var map = new mapboxgl.Map({
+		         container: 'map', // container id
+		         style: 'mapbox://styles/zoekleiner/clv2pzabz00d501q17wrn3f29' // 			stylesheet	location	
+		     });
+			 // Add zoom and rotation controls to the map.
+			 map.addControl(new mapboxgl.NavigationControl());
+			
+			var state = { panelOpen: true };
+	     	 function panelSelect(e){
+	        if(state.panelOpen){
+	          document.getElementById('descriptionPanel').style.height = '26px';
+	          document.getElementById('glyph').className = "glyphicon glyphicon-			chevron-		up";
+	          state.panelOpen = false;
+	        } else {
+	          document.getElementById('descriptionPanel').style.height = '250px';
+	          document.getElementById('glyph').className = "glyphicon glyphicon-			chevron-		down";
+	          state.panelOpen = true;
+	        }
+     		 }
 	</script>
-
  </body>
  </html>
- 
