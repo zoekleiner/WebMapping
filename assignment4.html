@@ -53,7 +53,7 @@
 	     margin-left: 10px;
 	   }
 	
-	  	   /*  style for items with the class "descriptionPanel" */
+	  	   /*Explanatory text in top left corner*/
 	   .descriptionPanel {
 	     position: absolute;
 	     top: 10px;
@@ -98,6 +98,7 @@
 	     <p style="margin-left: 10px; margin-right: 10px;">
 	       This is a map showing the percentages of homewoners and renters in the  Portland Area, from the the 2017 US Census. The left map is showing the percentage of homeowners by block group. The right map shows the percentage of home renters by block group. Move the arrows to see the differences!
 	   </div>
+		<!-- legend styling information -->
 	<div class="legend">
   <div class="legend-item">
     <div class="legend-color" style="background-color: rgb(240, 244, 255);"></div> 0%-17%
@@ -119,7 +120,8 @@
      <script>
        //add your Mapbox access token and map variable here!
 		mapboxgl.accessToken = 			'pk.eyJ1Ijoiem9la2xlaW5lciIsImEiOiJjbHZlOWpmanEwMDlhMmpudjVlbjJtamo2In0.ktENjKsTECQ72qYoBZCnLQ';
- 		var ownerMap = new mapboxgl.Map({
+ 		<!-- map of owner data -->
+	     var ownerMap = new mapboxgl.Map({
 		     container: 'owners', // owners map div 
 		     style: 'mapbox://styles/mapbox/dark-v10', // Mapbox dark style 
 		     center: [-122.68809605613046, 45.510490555239116], 
@@ -151,6 +153,7 @@
                "fill-opacity": 0.7 
            }       
     }); 		});
+	     <!-- map of renter data -->
 		var renterMap = new mapboxgl.Map({
 		    container: 'renters', // owners map div 
 		    style: 'mapbox://styles/mapbox/dark-v10', // Mapbox light style so we can observe the swipe
@@ -166,7 +169,7 @@
 		        url: 'mapbox://zoekleiner.40u91bjj' //input your tileset ID URL
 		      },
 		        'source-layer': 'Owner-Renter-Pop_2-6qadyj', //input your source layer name e.g. Owner-Renter-Pop-dr7310
-		      paint: {
+			paint: {
 		        'fill-color':  ["step",
 			   ["get", "Rent"],
 			   "hsl(225, 100%, 97%)",
@@ -181,6 +184,7 @@
 			   "fill-opacity": 0.7  ,
 		      }
 		 }); });
+	     <!-- popup section showing percentages for each block group -->
 		 var popup = new mapboxgl.Popup({
 		     closeButton: false,
 		     closeOnClick: false
