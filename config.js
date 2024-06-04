@@ -20,7 +20,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Welcome to the Oregon Renamed Places Project.',
-            description: 'This interactive map will take you through a range of locations in Oregon that have been renamed following an initiative that removed derogatory terms from public lands. Many of the new names are culturally significance to Indigenous peoples. Native people have been and continue to be present on this land and their culture is vital to understand. Keep scrolling to learn more about the meanings behind these names, and gain insight into the rich cultural heritage of Oregon’s Indigenous communities and their enduring connection to the land.',
+            description: 'This interactive map will take you through a range of locations in Oregon that have been renamed following an initiative that removed derogatory terms from public lands. Many of the new names are culturally significant for Indigenous people. Native people have been and continue to be present on this land and their culture is vital to understand. Keep scrolling to learn more about the meanings behind these names, and gain insight into the rich cultural heritage of Oregon’s Indigenous communities and their enduring connection to the land.',
             //this is the first location the map opens to, Oregon at the state level
             location: {
                 center: [-120.67996, 44.51897],
@@ -93,7 +93,7 @@ var config = {
             hidden: false,
             category: "IL",
             title: 'Talekma Creek',
-            description: 'The Takelma Tribe lived across Southern Oregon for over 10,000 years. This creek flows through the the native homeland of the Takelma people known as Table Rocks. During the era of colonization, this region was renamed as the Rogue River Valley.',
+            description: 'The Takelma Tribe lived in Southern Oregon for over 10,000 years. This creek flows through the native homeland of the Takelma people known as Table Rocks. During the era of colonization, this region was renamed as the Rogue River Valley.',
                 //From the late 1840s until about 1857, there were numerous conflicts and battles in the area between the Rogue River tribes and the newcomers. The culmination of the early conflicts were the treaties of 1853 and 1854 with some of the Rogue River tribes that ceded millions of acres of land to the United States in exchange for peace, safety, and a permanent reservation.
             location: {
                 center: [-123.6477113, 42.2775561],
@@ -688,7 +688,7 @@ var config = {
             hidden: false,
             category: "ST",
             title: 'Named after a persona in Native Story Telling.',
-            description: 'The following points were named after characters from Native stories that are recited to teach listeners about various life lessons and natural phenomena. These points are shwon as orange circles on the map. ',
+            description: 'The following points were named after characters from Native stories that are recited to teach listeners about various life lessons and natural phenomena. These points are shown as orange circles on the map. ',
             location: {
                 center: [-123.00421, 42.08511],
                 zoom: 9.77,
@@ -724,7 +724,7 @@ var config = {
             hidden: false,
             category: "ST",
             title: 'Acorn Woman Lake',
-            description: 'In southwest Oregon, the legend of the Acorn Woman is a powerful story of sacrifice and care. The Acorn Woman is a native medicine woman who spreads her skin across the bark of oak trees each spring to produce arcons filled with her medicine.',
+            description: 'In southwest Oregon, the legend of the Acorn Woman is a powerful story of sacrifice and care. The Acorn Woman is a native medicine woman who spreads her skin across the bark of oak trees each spring to produce acorns filled with her medicine.',
             //need to change the color of the marker to be pink
             location: {
                 center: [-123.0203121, 42.04047036],
@@ -780,7 +780,7 @@ var config = {
             hidden: false,
             category: "ST",
             title: 'Acorn Woman Peak',
-            description: 'A short distance from Acorn Woman Mountain, lies Acorn Woman peak.',
+            description: 'A short distance from Acorn Woman Mountain lies Acorn Woman peak.',
             //need to either delete the peak or add second marker
             location: {
                 center: [-123.0119555, 42.0696414],
@@ -844,7 +844,7 @@ var config = {
             title: 'Rumley Creek',
             //ask how to make this photo smaller
             image: 'https://www.oregonhistoryproject.org/media/uploads/William-Rumley-FSDM2.jpg',
-            description: 'Rumley Creek is named after William Rumley, a man born into slavery in 1830. He traveled from Missouri to Califronia during the gold rush where he escaped enslavment at the age of 21. Rumley ventured north and eventually married Native Karok woman, named Lucy, in 1864. The couple became community legends for their constant dedication and generosity.',
+            description: 'Rumley Creek is named after William Rumley, a man born into slavery in 1830. He traveled from Missouri to California during the gold rush where he escaped enslavment at the age of 21. Rumley ventured north and eventually married a Native Karok woman, named Lucy, in 1864. The couple became community legends for their constant dedication and generosity.',
             //need to either delete the peak or add second marker
             location: {
                 center: [-124.3631578, 42.4684427],
@@ -870,7 +870,7 @@ var config = {
             hidden: false,
             category: "IF",
             title: 'Chief Miwaleta Creek',
-            description: 'Chief Miwaleta lead The Cow Creek Band Of Umpqua Tribe Of Indians during the latter half of the 27th century. He was killed by influenza during the catastrophic gencoide of Indigenous people. This creek was renamed in his honor.',
+            description: 'Chief Miwaleta lead The Cow Creek Band Of Umpqua Tribe Of Indians during the latter half of the 17th century. He was killed by influenza during the catastrophic gencoide of Indigenous people. This creek was renamed in his honor.',
             //need to either delete the peak or add second marker
             location: {
                 center: [-123.4500688, 42.9190056],
@@ -896,7 +896,7 @@ var config = {
             hidden: false,
             category: "IF",
             title: 'Gathering Creek',
-            description: 'The Cow Creek Band Of Umpqua Tribe lived between the Cascade and Coastal mountain ranges along the South Umpqua River. The tribes territory included the Umpqua watershed and the surrounding areas were places of trade, hunting and gathering. This creek was a place of gathering, celebration, and commune for the Cow Creek people and has been renamed to refelct their presence on the land.',
+            description: 'The Cow Creek Band Of Umpqua Tribe Of Indians lived between the Cascade and Coastal mountain ranges along the South Umpqua River. The tribes territory included the Umpqua watershed and the surrounding areas were places of trade, hunting and gathering occured. This creek was a place of gathering, celebration, and commune for the Cow Creek people and has been renamed to reflect their presence on the land.',
             //need to either delete the peak or add second marker
             location: {
                 center: [-123.2948173, 44.1448454],
